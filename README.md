@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,43 +44,41 @@
     </style>
 </head>
 <body>
-    <audio id="music" autoplay loop>
-        <source src="tu-musica.mp3" type="audio/mpeg">
+    <audio autoplay loop>
+        <source src="El Viejo del Sombrerón [ywxwccSwkPM].mp3" type="audio/mpeg">
         Tu navegador no soporta audio.
-    </audio>
-    
-    <div class="container">
-        <h1>¡Te Invitamos a Celebrar!</h1>
-        <h2>Margarita - 80 Aniversario</h2>
-        <p>Nos encantaría contar contigo en esta ocasión especial.</p>
-        <p><strong>Fecha:</strong> 17 de mayo de 2025</p>
-        <p><strong>Hora:</strong> 8:00 PM</p>
-        <h3>Confirma tu asistencia</h3>
-        <form id="rsvpForm">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" required><br><br>
-            <label for="email">Correo:</label>
-            <input type="email" id="email" required><br><br>
-            <button type="submit">Confirmar</button>
-        </form>
-        <p id="responseMessage"></p>
-        <br>
-        <button onclick="openLocation()">Ver Ubicación</button>
-        <br><br>
-        <!-- Enlace para confirmar asistencia en WhatsApp -->
-        <button onclick="window.open('https://wa.me/528448695474?text=Confirmo%20mi%20asistencia%20al%20evento', '_blank')">Confirmar Asistencia en WhatsApp</button>
-    </div>
+    </audio><div class="container">
+    <h1>¡Te Invitamos a Celebrar!</h1>
+    <h2>Margarita - 80 Aniversario</h2>
+    <p>Nos encantaría contar contigo en esta ocasión especial.</p>
+    <p><strong>Fecha:</strong> 17 de mayo de 2025</p>
+    <p><strong>Hora:</strong> 8:00 PM</p>
+    <h3>Confirma tu asistencia</h3>
+    <form id="rsvpForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required><br><br>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" required><br><br>
+        <button type="submit">Confirmar</button>
+    </form>
+    <p id="responseMessage"></p>
+    <br>
+    <button onclick="openLocation()">Ver Ubicación</button>
+    <br><br>
+    <button onclick="window.open('https://wa.me/528448695474?text=Confirmo%20mi%20asistencia%20al%20evento', '_blank')">Confirmar Asistencia en WhatsApp</button>
+</div>
 
-    <script>
-        document.getElementById('rsvpForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            let name = document.getElementById('name').value;
-            document.getElementById('responseMessage').textContent = `Gracias por confirmar, ${name}!`;
-        });
+<script>
+    document.getElementById('rsvpForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        let name = document.getElementById('name').value;
+        document.getElementById('responseMessage').textContent = `Gracias por confirmar, ${name}!`;
+    });
 
-        function openLocation() {
-            window.open('https://maps.app.goo.gl/86mMnjZvNwZJZTUe6', '_blank');
-        }
-    </script>
+    function openLocation() {
+        window.open('https://maps.app.goo.gl/86mMnjZvNwZJZTUe6', '_blank');
+    }
+</script>
+
 </body>
 </html>
